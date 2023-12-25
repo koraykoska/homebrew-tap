@@ -2,7 +2,7 @@ class Filecrypt < Formula
   homepage "https://github.com/koraykoska/filecrypt"
   version "0.3.0"
   url "https://github.com/koraykoska/filecrypt/archive/refs/tags/0.3.0.tar.gz"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  sha256 "66e1c5420cd90ca871bfdc987308602a591b1a703f1d3ae1a27b653a0228b038"
 
   def install
     system "swift build -c release"
