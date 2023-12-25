@@ -1,11 +1,12 @@
 class Filecrypt < Formula
-  homepage "https://github.com/Ybrin/filecrypt"
-  version "0.2.1"
-  url "https://github.com/Ybrin/filecrypt/releases/download/#{version}/macOS-high-sierra"
-  sha256 "c06696af6903e791d1d996f272325679badfb9167ab4dff690216ae90d3510c2"
+  homepage "https://github.com/koraykoska/filecrypt"
+  version "0.3.0"
+  url "https://github.com/koraykoska/filecrypt/archive/refs/tags/0.3.0.tar.gz"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
   def install
-    system "mv macOS-high-sierra filecrypt"
+    system "swift build -c release"
+    system "mv ./.build/release/filecrypt filecrypt"
     bin.install "filecrypt"
   end
 end
