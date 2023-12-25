@@ -8,7 +8,7 @@ class Filecrypt < Formula
   depends_on xcode: ["10.0", :build]
 
   def install
-    system "swift build -c release"
+    system "swift build -c release --disable-sandbox"
     system "mv ./.build/release/filecrypt filecrypt"
     bin.install "filecrypt"
   end
