@@ -1,4 +1,4 @@
-class KubeConf < Formula
+class Kubeconf < Formula
     desc "Kubernetes Config file merge/list/delete/manage cli tool for automating kubeconfig management."
     homepage "https://github.com/koraykoska/kubeconf"
     version "v0.1.0"
