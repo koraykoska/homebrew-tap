@@ -1,4 +1,4 @@
-class Filecrypt < Formula
+class Kubecfg < Formula
     desc "Kubernetes Config file merge/list/delete/manage cli tool for automating kubeconfig management."
     homepage "https://github.com/koraykoska/kubecfg"
     version "v0.1.0"
